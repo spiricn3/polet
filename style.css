@@ -2,25 +2,19 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-  /* Glatko animiraj skrolovanje */
-
-
+ 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
-
-
-
 
 header {
   background-color: #ffffff;
-  /* Boja pozadine za nav bar */
   color: #093466;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  /* Visok z-index kako bi bio iznad ostalog sadržaja */
 }
 
 .container {
@@ -31,7 +25,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 
 
 nav ul {
@@ -53,18 +46,14 @@ nav ul li a {
 
 .home-section {
   height: 100vh;
-  /* Puno visine viewporta */
-  background-image: url('images/ciscenje_ulica.jpg');
-  /* Dodavanje slike pozadine */
+  background-image: url('images/tabla.png');
   background-size: cover;
   background-position: center;
   position: relative;
-
 }
 
 .overlay {
   position: absolute;
-
   top: 8.5%;
   left: 0;
   width: 40%;
@@ -86,7 +75,7 @@ nav ul li a {
 
 @keyframes slova {
   from {
-    color: rgba(243, 211, 174, 0.856);
+    color: rgba(174, 233, 243, 0.856);
   }
 
   to {
@@ -96,13 +85,11 @@ nav ul li a {
 
 .text-content {
   max-width: 300px;
-  /* Ograničavanje širine teksta */
 }
 
 .text-content h2 {
   font-size: 32px;
   color: #093466;
-  /* Veličina naslova */
 }
 
 .text-content p {
@@ -111,7 +98,6 @@ nav ul li a {
   text-align: left;
   animation-name: slova;
   animation-duration: 3s;
-  /* Veličina teksta */
 }
 
 .about-us {
@@ -138,72 +124,51 @@ nav ul li a {
 
 
 .velikidiv {
-  max-width: 1300px;
-  margin-top: 10px;
-  margin-bottom: 10x;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Stilizacija za veliki div */
-.velikidiv {
-  max-width: 1000px;
-  margin: 0 auto;
-  /* Centriranje */
-  display: flex;
-}
 
-/* Stilizacija za polovinu (levu stranu) */
 .polovina {
   width: 50%;
   padding: 20px;
   box-sizing: border-box;
-  /* Uključuje padding u širinu */
   border-right: 1px solid #ccc;
-  /* Dodaje desnu granicu */
 }
 
-/* Stilizacija za nabrajanja (listu) */
 .nabrajanja {
   margin: 0;
   padding: 0;
 }
 
-/* Stilizacija za stavke u listi */
+
 .nabrajanja li {
   list-style-type: none;
-  /* Uklanja podrazumevane oznake */
   margin-bottom: 10px;
 }
 
-/* Stilizacija za linkove u listi */
+
 .nabrajanja li a {
   text-decoration: none;
-  /* Uklanja podvučenost */
-  color: #333;
-  /* Boja teksta */
+  color: #093466;
   display: block;
-  /* Puni širina linka */
 }
 
-/* Stilizacija za opis (desnu stranu) */
+
 .opis {
   width: 50%;
   padding: 20px;
   box-sizing: border-box;
-  /* Uključuje padding u širinu */
 }
 
-/* Stilizacija za opise paragrafa */
+
 .opis p {
   display: none;
-  /* Inicijalno sakrij opise */
 }
-
-/* Dodajte dodatni stil po želji */
-
 
 
 .kamion {
@@ -218,8 +183,8 @@ nav ul li a {
   width: 600px;
   height: 250px;
   overflow: hidden;
-  border-bottom: 3px solid #350a0a;
-  color: #fff;
+  border-bottom: 3px solid #525151;
+  color: #ffffff;
 }
 
 .mountain {
@@ -252,7 +217,7 @@ nav ul li a {
     -90px 0 0 50px #039e1c,
     250px 0 0 50px #1f965e,
     290px 0 0 50px #057742,
-    620px 0 0 50px #1aec12;
+    620px 0 0 50px #56c752;
   animation: hill 4s 2s linear infinite;
 }
 
@@ -298,8 +263,8 @@ nav ul li a {
   position: absolute;
   width: 25px;
   box-shadow:
-    -30px 28px 0 1.5px #d6b865,
-    -35px 18px 0 1.5px #dbe45a;
+    -30px 28px 0 1.5px #e5e912,
+    -35px 18px 0 1.5px #dfe95b;
 }
 
 .wheels {
@@ -432,13 +397,8 @@ nav ul li a {
 }
 
 
-
-
-
-
 footer {
   background-color: #093466;
-
   display: flex;
   gap: 60px;
   padding: 10px 60px;
