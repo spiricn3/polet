@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
- 
+
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 }
@@ -73,6 +73,8 @@ nav ul li a {
   text-align: center;
 }
 
+
+
 @keyframes slova {
   from {
     color: rgba(174, 233, 243, 0.856);
@@ -103,12 +105,14 @@ nav ul li a {
 .about-us {
   background-color: #093466;
   padding: 50px;
+
 }
 
 .text-about {
   color: rgba(174, 233, 243, 0.856);
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 30px;
 }
 
 .text-about h2 {
@@ -126,7 +130,7 @@ nav ul li a {
 .velikidiv {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 30px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,10 +151,14 @@ nav ul li a {
 
 
 .nabrajanja li {
-  list-style-type: none;
+  list-style-type: disc;
   margin-bottom: 10px;
+  color: #093466;
 }
 
+.nabrajanja h3{
+  color: #093466;
+}
 
 .nabrajanja li a {
   text-decoration: none;
@@ -168,20 +176,30 @@ nav ul li a {
 
 .opis p {
   display: none;
+  color: #093466;
 }
 
 
 .kamion {
   background-color: #093466;
-
 }
+
+.fiksantekst {
+  margin: auto;
+  padding: 50px;
+}
+
+.tekst{
+color: rgba(174, 233, 243, 0.856);
+text-align: justify;
+}  
 
 .loop-wrapper {
   margin: 0 auto;
   position: relative;
   display: block;
   width: 600px;
-  height: 250px;
+  height: 150px;
   overflow: hidden;
   border-bottom: 3px solid #525151;
   color: #ffffff;
